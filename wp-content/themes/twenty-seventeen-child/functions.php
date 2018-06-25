@@ -1,6 +1,6 @@
 <?php
 
-#test
+#test 
 # Register extra footer area 3
 register_sidebar(array(
   'name' => __('Footer 3', 'twentyseventeen'),
@@ -326,6 +326,7 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
+#can attach here javascript also if we want using wp_enqueue_style 
 
 class Category
 {
