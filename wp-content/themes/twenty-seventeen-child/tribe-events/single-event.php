@@ -89,7 +89,11 @@ $category_color = tribe_get_color_for_categories($category_text);
                         <div class="tribe-events-single-event-description tribe-events-content">
                                 <?php the_content(); ?>
                         </div>
-                        </div> <!-- END left col -->
+
+                        
+
+
+                        </div> <!-- END lveft col -->
 
 			<!-- Event meta -->
                         <!-- Right Col -->

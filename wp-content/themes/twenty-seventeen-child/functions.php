@@ -427,7 +427,7 @@ $holidays_at_hammer = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 16.6%; max-width: 2%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 15%; max-width: 2%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_holidays@hammer.jpg',
-        "sub_brand_url " => '/hammer-speaks'
+        "sub_brand_url " => '/holidays-hammer'
 ));
 
 $hammer_speaks = new Category(array(
@@ -459,11 +459,11 @@ $also_at_hammer = new Category(array(
         "banner_url" => '/wp-content/uploads/2018/03/Also-At-Hammer-Logo.png',
         "logo_css_margin_left" => 'margin-top: 3%; margin-left: 44.9%; max-width: 7%;',
         "logo_css_margin_right" => 'margin-top: 3%; margin-left: -3.5%; max-width: 7%;',
-        "color" => '--sjsuAtHammer',
+        "color" => '--alsoAtHammer',
         "logo_css_margin_event_list" => 'margin-top: 2%; margin-left: 15.6%; max-width: 4%;',
         "logo_css_margin_past_event_list" => 'margin-top: 2%; margin-left: 14%; max-width: 4%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_also@hammer.jpg',
-        "sub_brand_url " => 'also-hammer'
+        "sub_brand_url " => '/also-hammer'
 ));
 
 
@@ -537,7 +537,7 @@ function get_logo_css_margin_past_event_list ( $category_text ){
 
 function get_sub_brand_url ( $category_text ) {
         global $categories_map; // must access global scope
-        return $categories_map[$category_text]->get_sub_brand_logo_url();
+        return $categories_map[$category_text]->get_sub_brand_url();
 }
 
 
@@ -556,10 +556,10 @@ function get_sub_brand_url ( $category_text ) {
 //                     $url = '/sjsu-hammer';
 //                     break;
 //             case 'Hammer Speaks':
-//                     $url = '/art-tech';
+//                     $url = '/hammer-speaks';
 //                     break;
 //             case 'Holidays @ Hammer':
-//                     $url = '/hammer-speaks';
+//                     $url = '/holidays-hammer';
 //                     break;
 //             case 'Music Without Borders':
 //                     $url = '/music-without-borders';

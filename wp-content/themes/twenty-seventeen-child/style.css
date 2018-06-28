@@ -568,6 +568,7 @@ Global - Banners
 }
 
 #upcoming-events-banner,
+#archives-banner,
 #keep-in-touch-banner,
 #rentals-conference-banner {
   width: 100%;
@@ -794,6 +795,7 @@ Events & Tickets - Banners - Upcoming Events
 }
 
 #upcoming-events-banner h1,
+#archives-banner h1,
 #home-lookback-banner h1,
 #keep-in-touch-banner h1,
 #rentals-conference-banner h1,
