@@ -910,6 +910,10 @@ Events & Tickets - Banners - Upcoming Events
   font-weight: 400 !important;
 }
 
+.tribe-events-event-url a {
+  color: var(--white) !important;
+}
+
 .event-container {
   display: flex;
   flex-direction: row;
