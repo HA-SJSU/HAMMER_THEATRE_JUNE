@@ -158,8 +158,8 @@ $category_color = tribe_get_color_for_categories($category_text);
 		// Event Website
 		if ( ! empty( $website ) ) : ?>
 			<br>
-			<dt style="font-weigh"> <?php esc_html_e( 'Website:', 'the-events-calendar' ) ?> </dt>
-			<dd class="tribe-events-event-url"> <?php echo $website; ?> </dd>
+			<dt> <?php esc_html_e( 'Website:', 'the-events-calendar' ) ?> </dt>
+			<dd class="tribe-events-event-url" style="color: white !important;"> <?php echo $website; ?> </dd>
 		<?php endif ?>
 
 		<?php do_action( 'tribe_events_single_meta_details_section_end' ) ?>
