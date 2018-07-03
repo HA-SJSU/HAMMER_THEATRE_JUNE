@@ -18,9 +18,7 @@ function tribe_add_start_time_to_event_title ( $post_title, $post_id ) {
     $category_text = tribe_get_text_categories();
     $category_color = tribe_get_color_for_categories($category_text);
 
-    echo '<h1 style="font-size: 16px; color: white; background-color: var('.$category_color.');">'.$post_title.'</h1>';
-
-    return $post_title;
+    return '<div style="background-color: var('.$category_color.'); border: 1px var('.$category_color.') solid;"><h1 style="font-size: 18px; color: white; padding: 2px;">'.$post_title.'</h1></div>';
 }
 add_filter( 'the_title', 'tribe_add_start_time_to_event_title', 100, 2 );
 
@@ -96,7 +94,7 @@ if ( class_exists('Tribe__Events__Main') ){
  *        For example, if start_date is 2016-02-10, then this functions will show past event from 2016-02-10 to the current date
  * @return None. This function does not return anything. It only renders past events to browser
  */
-function show_past_event ( $category="", $start_date="1/1/2017", $num_post=10 ) {
+function show_past_event ( $category="", $start_date="1/1/2017", $num_post=3 ) {
 
         $time = strtotime( $start_date );
         $start_date = date( 'Y-m-d H:i:s', $time );
