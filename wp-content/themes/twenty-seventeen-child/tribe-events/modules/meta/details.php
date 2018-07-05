@@ -50,6 +50,10 @@ $time_title = apply_filters( 'tribe_events_single_event_time_title', __( 'Time:'
 $cost = tribe_get_formatted_cost();
 $website = tribe_get_event_website_link();
 
+$review = get_post_meta($event_id, 'Reviews', true);
+$review_author = get_post_meta($event_id, 'Reviews_Author', true);
+$review_url = get_post_meta($event_id, 'Reviews_URL', true);
+
 
 /*
  * Here, I am getting the category in String
@@ -165,3 +169,39 @@ $category_color = tribe_get_color_for_categories($category_text);
 		<?php do_action( 'tribe_events_single_meta_details_section_end' ) ?>
 	</dl>
 </div>
+
+
+<div class="tribe-events-meta-group tribe-events-meta-group-details" style="background-color: var(<?php echo $category_color ?>);">
+	<h2 class="tribe-events-single-section-title"> Reviews/Articles </h2>
+	<dl>
+
+		<?php
+		do_action( 'tribe_events_single_meta_details_section_start' );
+
+		// Event Review
+		if ($review) {
+			echo '<span><em>"'.$review.'"</em></span>';
+		}
+
+		// Event Review Author
+		if ($review_author) {
+			echo '<span> — <strong>'.$review_author.'</strong></span><br>';
+		}
+		
+
+		// Event Review URL
+		if ($review_url) {
+			echo '<span style="color: white !important;"><a target="_blank" href="'.$review_url.'">Read full review here</em></span><br>';
+		}
+		
+		do_action( 'tribe_events_single_meta_details_section_end' ) ?>
+
+	</dl>
+</div>
+
+
+
+
+
+
+
