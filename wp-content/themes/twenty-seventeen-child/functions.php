@@ -413,7 +413,7 @@ $art_tech = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 16.7%; max-width: 2%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 15%; max-width: 2%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_arttech.jpg',
-        "sub_brand_url " => '/art-tech'
+        "sub_brand_url" => '/art-tech'
 ));
 
 $lights_action = new Category(array(
@@ -425,7 +425,7 @@ $lights_action = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 16.6%; max-width: 2%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 15%; max-width: 2%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_lights_action.jpg',
-        "sub_brand_url " => '/lights-and-action'
+        "sub_brand_url" => '/lights-and-action'
 ));
 
 $music_wo_borders = new Category(array(
@@ -437,7 +437,7 @@ $music_wo_borders = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 10%; max-width: 10%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 9%; max-width: 10%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_musicwoborders.jpg',
-        "sub_brand_url " => '/music-without-borders'
+        "sub_brand_url" => '/music-without-borders'
 ));
 
 $holidays_at_hammer = new Category(array(
@@ -449,7 +449,7 @@ $holidays_at_hammer = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 16.6%; max-width: 2%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 15%; max-width: 2%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_holidays@hammer.jpg',
-        "sub_brand_url " => '/holidays-hammer'
+        "sub_brand_url" => '/holidays-hammer'
 ));
 
 $hammer_speaks = new Category(array(
@@ -461,7 +461,7 @@ $hammer_speaks = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 16%; max-width: 3%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 14.5%; max-width: 3%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_hammerspeaks.jpg',
-        "sub_brand_url " => '/hammer-speaks'
+        "sub_brand_url" => '/hammer-speaks'
 ));
 
 $sjsu_at_hammer = new Category(array(
@@ -473,7 +473,7 @@ $sjsu_at_hammer = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 16.6%; max-width: 2%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 15%; max-width: 2%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_sjsu@hammer.jpg',
-        "sub_brand_url " => '/sjsu-hammer'
+        "sub_brand_url" => '/sjsu-hammer'
 ));
 
 $also_at_hammer = new Category(array(
@@ -485,7 +485,7 @@ $also_at_hammer = new Category(array(
         "logo_css_margin_event_list" => 'margin-top: 2%; margin-left: 15.6%; max-width: 4%;',
         "logo_css_margin_past_event_list" => 'margin-top: 2%; margin-left: 14%; max-width: 4%;',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_also@hammer.jpg',
-        "sub_brand_url " => '/also-hammer'
+        "sub_brand_url" => '/also-hammer'
 ));
 
 
@@ -498,7 +498,7 @@ $hammer_news = new Category(array(
         "logo_css_margin_event_list" => '',
         "logo_css_margin_past_event_list" => '',
         "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_hammernews.jpg',
-        "sub_brand_url " => 'Error'
+        "sub_brand_url" => 'Error'
 ));
 
 

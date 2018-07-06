@@ -59,6 +59,7 @@ foreach ( $events as $post ) {
     setup_postdata( $post );
 
     $category_text = tribe_get_text_categories();
+    $brand_url = get_sub_brand_url($category_text);
     $logo_url = get_logo_url($category_text);
     $is_left = ( $counter % 2 == 1 ? true : false );
     $logo_style_text = get_logo_css_margin ( $category_text, $is_left );
@@ -70,7 +71,7 @@ foreach ( $events as $post ) {
         echo '</div>';
 
         echo '<div id="home-event-subcontainer-'.$counter.'">';
-        echo '<h3 class="margin-bottom-50 home-event-series"><a href="'.get_sub_brand_url($category_text).'">'.$category_text.'<span style="color: var('.tribe_get_color_for_categories( tribe_get_text_categories() ).');">&#x2794;</span></a></h3>';
+        echo '<h3 class="margin-bottom-50 home-event-series"><a href="'.$brand_url.'">'.$category_text.'<span style="color: var('.tribe_get_color_for_categories( tribe_get_text_categories() ).');">&#x2794;</span></a></h3>';
         echo '<h2 class="featured-event-title">'.$post->post_title.'</h2>';
         echo '<h4 class="subtitle">' . get_post_meta($post->ID, 'subtitle', true) . '</h4>';
         echo '<p id="home-event-excerpt-'.$counter.'">'.tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ).'</p>';
