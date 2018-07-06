@@ -30,6 +30,8 @@ $event_id = get_the_ID();
 // For more detail go to there and please read the doc there. Thank you!
 $category_text = tribe_get_text_categories();
 $category_color = tribe_get_color_for_categories($category_text);
+// Get the brand URL of the category
+$brand_url = get_sub_brand_url($category_text);
 
 ?>
 
@@ -42,8 +44,10 @@ $category_color = tribe_get_color_for_categories($category_text);
         <!-- Category -->
         <div style="font-size: 15px;">
                 <h3 style="vertical-align: middle;">
+                	<a href="<?php echo $brand_url ?>">
                         <?php echo $category_text ?> 
                         <span style="color: var(<?php echo $category_color ?>);vertical-align: middle;">&#x2794;</span>
+                    </a>
                 </h3>
         </div>
 
