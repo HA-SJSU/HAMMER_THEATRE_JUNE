@@ -144,8 +144,6 @@ $category_color = tribe_get_color_for_categories($category_text);
 			<div class="tribe-events-event-cost"> <?php esc_html_e( $cost ); ?> </div>
 		<?php endif ?>
 
-		<?php echo tribe_meta_event_tags( sprintf( esc_html__( '%s Tags:', 'the-events-calendar' ), tribe_get_event_label_singular() ), ', ', false ) ?>
-
                 <!-- Render ticket link in single event page -->
                 <?php
                         $is_past = tribe_is_past_event($event_id);
