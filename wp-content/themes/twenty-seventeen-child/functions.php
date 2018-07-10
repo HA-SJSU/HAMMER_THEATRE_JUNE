@@ -174,7 +174,7 @@ function show_past_event_sc_wrapper ( $atts ) {
         $a = shortcode_atts( array(
                 'category' => '',
                 'start_date' => '1/1/2017',
-                'num_post' => 10,
+                'num_post' => 3,
             ), $atts );
         show_past_event($a['category'], $a['start_date'], $a['num_post']);
 }
@@ -436,7 +436,7 @@ $music_wo_borders = new Category(array(
         "color" => '--musicWithoutBorders',
         "logo_css_margin_event_list" => 'margin-top: 1%; margin-left: 10%; max-width: 10%;',
         "logo_css_margin_past_event_list" => 'margin-top: 1%; margin-left: 9%; max-width: 10%;',
-        "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/03/425x35_musicwoborders.jpg',
+        "sub_brand_logo_url" => 'http://hammertheatre.staging.wpengine.com/wp-content/uploads/2018/07/425x35_musicwoborders_2.png',
         "sub_brand_url" => '/music-without-borders'
 ));
 

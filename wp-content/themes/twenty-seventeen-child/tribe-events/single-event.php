@@ -93,7 +93,8 @@ $brand_url = get_sub_brand_url($category_text);
                         
 
 
-                        </div> <!-- END lveft col -->
+                        </div> 
+                        <!-- END lveft col -->
 
 			<!-- Event meta -->
                         <!-- Right Col -->
