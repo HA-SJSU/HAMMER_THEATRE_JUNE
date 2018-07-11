@@ -905,6 +905,13 @@ Events & Tickets - Banners - Upcoming Events
       EVENT PAGE
 --------------------------------------- */
 
+.performance-photos {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  align-items: flex-start;
+}
+
 .tribe-events-loop .tribe-events-event-meta {
   font-size: 1.6rem !important;
   font-weight: 400 !important;
