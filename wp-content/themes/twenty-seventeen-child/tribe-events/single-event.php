@@ -90,24 +90,7 @@ $brand_url = get_sub_brand_url($category_text);
                                 <?php the_content(); ?>
                         </div>
 
-                        <?php 
-                        	$image1 = get_field('performance_images');
-                        	$image2 = get_field('performance_images2');
-                        	$image3 = get_field('performance_images3');
-                        	if ($image1) {
-                        		echo '<h1 style="font-size: 2rem; opacity: 0.7;">Performance Photos</h1>';
-                        		echo '<div class="performance-photos margin-top-20 margin-bottom-20">';
-                        		echo '<img src="'.$image1["url"].'" alt="'.$image1["alt"].'" />';
-                        	}
-                        	if ($image2) {
-                        		echo '<img src="'.$image2['url'].'" alt="'.$image2['alt'].'" />';
-                        	}
-                        	if ($image3) {
-                        		echo '<img src="'.$image3['url'].'" alt="'.$image3['alt'].'" />';
-                        	}
-                        	echo '</div>';
-                        ?>
-
+                        
 
                         </div> 
                         <!-- END lveft col -->
