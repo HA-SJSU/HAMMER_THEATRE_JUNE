@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 $eventPage = "/events/";
                 $currentPage = $_SERVER['REQUEST_URI'];
                 if($eventPage == $currentPage){
-                        show_past_event();
+                        show_past_event("", "1/1/2017", 10);
                 } 
                 /*
                 else {
