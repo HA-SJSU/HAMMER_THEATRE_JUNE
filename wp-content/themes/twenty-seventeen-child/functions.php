@@ -562,6 +562,13 @@ function get_sub_brand_url ( $category_text ) {
         return $categories_map[$category_text]->get_sub_brand_url();
 }
 
+function debug_to_console( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
+}
 
 // BEFORE REFACTORING
 

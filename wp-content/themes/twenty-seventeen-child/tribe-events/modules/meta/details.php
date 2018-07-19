@@ -148,12 +148,22 @@ $category_color = tribe_get_color_for_categories($category_text);
                 <?php
                         $is_past = tribe_is_past_event($event_id);
                         $ticket_url = get_post_meta($event_id, 'Ticket_Link', true);
-                        if ($ticket_url && !$is_past) { ?>
-                                <a href="<?php echo $ticket_url; ?>" class="button single-event-buy-ticket-button-container" style="color: var(<?php echo $category_color ?>);">BUY TICKETS</a>
+                       
+
+                        if ($ticket_url  && $ticket_url !== "Free" && !$is_past) { ?>
+                                <a href="<?php echo $ticket_url; ?>" class="button single-event-buy-ticket-button-container" style="color: var(<?php echo $category_color ?>);">BUY TICKETS </a>
                         <?php
-                        } else {
-                        // do nothing;
-                        }
+                        } 
+
+                        elseif ($ticket_url === "Free") { ?>
+                        
+                        	<span><h4 class="free-event" style="margin-top: 5px; font-size: 1.6rem; font-weight: bold;  ;">This is a Free Event.</h4></span>
+                        <?php
+                    	}
+                    	else
+                    	{
+                    		
+                    	}
                         ?>
 		<?php
 
@@ -187,9 +197,6 @@ if ($review && $review_author && $review_url) {
 }
 
 ?>
-
-
-
 
 
 
