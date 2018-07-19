@@ -60,13 +60,13 @@ foreach ( $events as $post ) {
 
     $category_text = tribe_get_text_categories();
     $brand_url = get_sub_brand_url($category_text);
-    $logo_url = get_logo_url($category_text);
+    // $logo_url = get_logo_url($category_text);
     $is_left = ( $counter % 2 == 1 ? true : false );
     $logo_style_text = get_logo_css_margin ( $category_text, $is_left );
 
         // Image
         echo '<div class="va-top" id="home-event-img-'.$counter.'">';
-        echo '<img class="home-event-logo" src="'.$logo_url.'" style="'.$logo_style_text.'">';
+        // echo '<img class="home-event-logo" src="'.$logo_url.'" style="'.$logo_style_text.'">';
         echo tribe_event_featured_image( $post->ID, null, 'medium' );
         echo '</div>';
 
