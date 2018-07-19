@@ -129,7 +129,7 @@ if($is_current_page_events){
 <?php
       $ticket_url = get_post_meta($event_id, 'Ticket_Link', true);
       if ($ticket_url === "Free") { ?>
-            <span><h4 class="free-event" style="margin-top: 5px; font-size: 1.6rem; font-weight: bold;">This is a Free Event.</h4></span>
+            <span><strong><h4 class="free-event" style="margin-top: 5px; font-size: 1.6rem; font-weight: bold;">This is a free event.</h4></strong><</span>
             
       <?php } else if($ticket_url) {  ?>
                 <a href="<?php echo $ticket_url; ?>" class="button event-buy-ticket-button-container buy-ticket-button">BUY TICKETS</a>
